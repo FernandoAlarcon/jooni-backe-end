@@ -12,18 +12,16 @@ class LocationService
      *
      * @param array{name?: string, code?: string} $filters
      */
-    public function getAll(array $filters = [], int $perPage = 5): LengthAwarePaginator
+    public function getAll(array $filters = [], int $perPage = 6): LengthAwarePaginator
     {
         $query = Location::query();
 
         if (!empty($filters['name'])) {
-            $name = (string) $filters['name'];
-            $query->where('name', 'like', '%' . $name . '%');
+            $query->where('name', 'like', '%' . (string) $filters['name'] . '%');
         }
 
         if (!empty($filters['code'])) {
-            $code = (string) $filters['code'];
-            $query->where('code', 'like', '%' . $code . '%');
+            $query->where('code', 'like', '%' . (string) $filters['code'] . '%');
         }
 
         return $query->paginate($perPage);
