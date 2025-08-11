@@ -5,23 +5,30 @@
 ## Jello Jooni, this is about the project
 
 Following the instructions, all the statments are achieved, you need have enable PHP 8.0 in your computer to launch this version of Laravel 12.
+ 
+# Clone repo
+```git clone ...```
+<br/>
+# Get into the folder
+```cd jooni-backe-end```
+<br/>
+# Install dependencies
+```composer install```
+<br/>
+# Launch Server
+```php artisan serve```
 
-... git clone ...
-... cd/jooni-backe-end ...
-... composer install ...
-... php artisan serve ...
+## Additions
 
-## Additions 
+Check Laravel Pint
+```vendor/bin/pint```
+<br/>
 
-check Laravel Pint
-
-vendor/bin/pint  
-
-check test PHPUnit
-
-vendor/bin/phpunit
+Check tests PHPUnit
+```vendor/bin/phpunit```
 
 
+<br/>
 feel free to compile and launch the front-end
 https://github.com/FernandoAlarcon/jooni-front-end
  
