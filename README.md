@@ -4,25 +4,24 @@
 
 ## Jello Jooni, this is about the project
 
-Following the instructions, all the statments are achieved, you need have enable PHP 8.0 in your computer to launch this version of Laravel 12.
+Instructions, the statments are achieved, you need have enable PHP 8.0 in your computer to launch this version of Laravel 12.
  
-# Clone repo
+### Clone repo
 ```git clone ...```
-<br/>
-# Get into the folder
+
+### Get into the folder
 ```cd jooni-backe-end```
-<br/>
-# Install dependencies
+
+### Install dependencies
 ```composer install```
-<br/>
-# Launch Server
+
+### Launch Server
 ```php artisan serve```
 
 ## Additions
 
 Check Laravel Pint
-```vendor/bin/pint```
-<br/>
+```vendor/bin/pint``` 
 
 Check tests PHPUnit
 ```vendor/bin/phpunit```
