@@ -11,7 +11,7 @@ class CheckApiKey
     {
         $apiKey = $request->header('X-API-KEY');
 
-        if ($apiKey !== env('API_KEY_SECRET')) {
+        if (!$apiKey || $apiKey !== env('API_KEY_SECRET')) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
