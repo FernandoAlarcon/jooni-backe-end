@@ -17,7 +17,7 @@ class LocationResource extends JsonResource
             'id' => $this->id,
             'code' => $this->code,
             'name' => $this->name,
-            'image' => $this->image,
+            'image' => $this->image ? url('storage/' . $this->image) : null,
             'created_at' => $this->created_at->toDateTimeString(),
         ];
     }

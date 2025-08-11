@@ -26,8 +26,18 @@ class LocationController extends Controller
 
     public function store(StoreLocationRequest $request)
     {
-        $location = $this->locationService->create($request->validated());
+        $data = $request->validated();
+
+        if ($request->hasFile('image')) {
+            // Guarda la imagen en storage/app/public/locations
+            $path = $request->file('image')->store('locations', 'public');
+            // Guarda la ruta relativa en el array $data, por ejemplo para acceder luego via url
+            $data['image'] = $path; 
+        }
+
+        $location = $this->locationService->create($data);
 
         return new LocationResource($location);
     }
+
 }

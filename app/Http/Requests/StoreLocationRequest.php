@@ -11,7 +11,7 @@ class StoreLocationRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class StoreLocationRequest extends FormRequest
         return [
             'code' => 'required|string|max:50|unique:locations,code',
             'name' => 'required|string|max:255',
-            'image' => 'nullable|url',
+            'image' => 'nullable|image|max:2048',
         ];
     }
 }
