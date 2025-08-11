@@ -2,7 +2,9 @@
  
 </p>
 
-## Jello Jooni, this is about the project
+## Jello Jooni, WELCOME to my repository, after dowload this one feel free to check the proyects, may there are something interesting.
+
+This is about the project
 
 Instructions, the statments are achieved, you need have enable PHP 8.0 in your computer to launch this version of Laravel 12.
  
@@ -26,6 +28,12 @@ Check Laravel Pint
 Check tests PHPUnit
 ```vendor/bin/phpunit```
 
+Test
+``` composer test ```
+
+API_KEY
+
+``` API_KEY_SECRET=locations-manager ```
 
 <br/>
 feel free to compile and launch the front-end
